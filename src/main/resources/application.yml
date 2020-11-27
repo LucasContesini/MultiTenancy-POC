@@ -1,1 +1,11 @@
-
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/teste?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC
+    username: root
+    password: 123Aa321
+    initialization-mode: always
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5Dialect
